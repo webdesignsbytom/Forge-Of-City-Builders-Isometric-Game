@@ -21,13 +21,20 @@
   <body>
     <!-- Header and nav -->
     <header id="topBar">
-      <div><span>⚗</span></div>
+        <!-- Username -->
+      <div class="user-data-container">
+        <div class="user-image-container">
+            <img id="user-profile-image" src="./img/user/cute-user.png" alt="Cute user profile">
+        </div>
+        <span id="username-container">Username</span>
+      </div>
       <section class="userIncomeContainer">
         <div id="goldContainer">Gold:</div>
         <div id="productionContainer">Production:</div>
         <div id="foodContainer">Food:</div>
         <div id="gemsContainer">Gems:</div>
       </section>
+
       <!-- Login Nav Bar -->
       <nav id="noUserNav">
         <ul id="noUserNav2">
@@ -39,6 +46,15 @@
           </li>
         </ul>
       </nav>
+
+      <!-- Level Data container -->
+      <section>
+        <div>
+            <span>Level Name</span>
+            <span>Age</span>
+            <span></span>
+        </div>
+      </section>
     </header>
 
     <section id="view">

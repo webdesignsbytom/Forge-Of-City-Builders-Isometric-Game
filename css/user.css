@@ -1,7 +1,25 @@
-.userIncomeContainer {
+.user-data-container {
     display: flex;
-    gap: 8px;
-    justify-content: center;
-    height: 100%;
     align-items: center;
+    margin-left: 2px;
+}
+
+.userIncomeContainer {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+#user-profile-image {
+  width: 40px;
+  height: 40px;
+}
+
+.user-image-container {
+    border: 2px solid black;
+    width: fit-content;
+    border-radius: 50%;
+    margin-right: 2px;
 }

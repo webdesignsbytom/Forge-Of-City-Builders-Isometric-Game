@@ -18,6 +18,8 @@ let goldContainer = document.querySelector('#goldContainer');
 let productionContainer = document.querySelector('#productionContainer');
 let foodContainer = document.querySelector('#foodContainer');
 let gemsContainer = document.querySelector('#gemsContainer');
+let nameContainer = document.querySelector('#username-container');
+nameContainer.innerText = user.username
 
 goldContainer.innerText = "💰" + user.gold;
 productionContainer.innerText = "🛠" + user.production;

@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  font-family: Tahoma;
+}
+
+section#view {
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.random-fill {
+  background-color: transparent;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 0 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  transform: rotateX(55deg) rotateY(0) rotateZ(-45deg);
+  position: absolute;
+  z-index: 1;
+}
+
+.add-grid {
+  position: absolute;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #bdbab9;
+  color: #bdbab9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-grid:hover {
+  background-color: #e7bd63;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.cell {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bdbab9;
+  transition: 0.1s;
+  cursor: pointer;
+  position: relative;
+}
+
+.cell:hover,
+.cell-active {
+  background-color: #e7bd63;
+  border: 1px solid #000;
+}
+
+.cell .item {
+  transform: rotateX(-45deg) rotateY(35deg) rotateZ(60deg);
+  width: 120px;
+  position: absolute;
+  top: -161px;
+  left: -61px;
+  height: 210px;
+  pointer-events: none;
+  transform-origin: bottom center;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 120px;
+  transition: 0.15s;
+}
+
